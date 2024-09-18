@@ -7,23 +7,23 @@ res = 0.1; % degrees, global
 r_m = 180 / res;
 r_n = 360 / res;
 % Output files folder :
-Output_folder = 'Y:/SiTHv2_out_longterm/';
+Output_folder = 'E:\github\SiTHv2\out\';
 
 if exist(Output_folder, 'dir') == 0.
     mkdir(Output_folder);
 end
 
 % Forcing data folder :
-Forcing_folder = 'Y:/ModelForcingData/01deg/'; 
+Forcing_folder = 'E:\github\SiTHv2\inpara\'; 
 
 % Sub-folders of Focing data
-subfolder_Rn = 'Rn/RN_ERA5L/RN.ERA5L.GLASS.S100.A';
+subfolder_Rn    = 'Rn/RN_ERA5L/RN.ERA5L.GLASS.S100.A';
 subfolder_Preci = 'Preci/ERA5L/P.ERA5L.scale001.A';
-subfolder_Ta = 'Ta/Ta.MSWX.scale001.A';
-subfolder_Pa = 'Pa/Pa.MSWX.scale001.A';
-subfolder_LAI = 'LAI/GEOV2_LAI/THEIA_GEOV2_R01_AVHRR_LAI_A'; 
-subfolder_LC = 'LC/hildap_vGLOB1.0f/hildap_vGLOB.A';
-subfolder_VOD = 'Vegetation_Optical_Depth/VODCA/0.1deg/VODCA_Xband_A';
+subfolder_Ta    = 'Ta/Ta.MSWX.scale001.A';
+subfolder_Pa    = 'Pa/Pa.MSWX.scale001.A';
+subfolder_LAI   = 'LAI/GEOV2_LAI/THEIA_GEOV2_R01_AVHRR_LAI_A'; 
+subfolder_LC    = 'LC/hildap_vGLOB1.0f/hildap_vGLOB.A';
+subfolder_VOD   = 'Vegetation_Optical_Depth/VODCA/0.1deg/VODCA_Xband_A';
 
 % Set georeference, for 0.25 degrees, global
 latlim = [-90,90];
